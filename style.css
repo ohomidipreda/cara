@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Heraldic Shadows", sans-serif;
+}
+body {
+    background-color: #f8f6f3;
+    color: #222;
+}
+header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: #ff0000;
+}
+.logo span {
+    color: #222;
+}
+nav a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 25px;
+    font-weight: bold;
+}
+nav a:hover {
+    color: #ff0000;
+}
+.banner {
+    min-height: 600px;
+    background: linear-gradient(
+        rgba(30, 20, 15, 0.75),
+        rgba(30, 20, 15, 0.75)
+    ),
+    linear-gradient(135deg, #ff0000, #2e211a);
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.banner-content {
+    width: 1200px;
+    max-width: 100%;
+    margin: auto;
+    padding: 40px 25px;
+}
+.banner h1 {
+    font-size: 65px;
+    max-width: 700px;
+    margin-bottom: 20px;
+}
+.banner p {
+    font-size: 20px;
+    line-height: 1.6;
+    max-width: 550px;
+    margin-bottom: 35px;
+    color: #eee;
+}
+.botao {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #ff0000;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+}
+.botao:hover {
+    background-color: #ff0000;
+}
+.beneficios {
+    max-width: 1200px;
+    margin: auto;
+    padding: 60px 25px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+.beneficio {
+    background-color: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+}
+.beneficio .icone {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+.beneficio h3 {
+    margin-bottom: 10px;
+}
+.beneficio p {
+    color: #777;
+    line-height: 1.5;
+}
+.sapato {
+    max-width: 1200px;
+    margin: auto;
+    padding: 60px 25px 100px;
+}
+.titulo {
+    text-align: center;
+    margin-bottom: 45px;
+}
+.titulo h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.titulo p {
+    color: #777;
+}
+.lista-sapato {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+.sapato {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+.sapato:hover {
+    transform: translateY(-7px);
+}
+.img-produto {
+    height: 230px;
+    background-color: #e9ddd3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 90px;
+}
+.sapato:nth-child(2) .img-produto {
+    background-color: #dfe5e8;
+}
+.sapato:nth-child(3) .img-produto {
+    background-color: #e3d8ce;
+}
+.sapato:nth-child(4) .img-produto {
+    background-color: #deded9;
+}
+.sapato-info {
+    padding: 22px;
+}
+.sapato-info h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+.sapato-info p {
+    color: #666;
+    margin-bottom: 15px;
+}
+.preco {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ff0000;
+    margin-bottom: 18px;
+}
+.comprar {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background-color: #222;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+.comprar:hover {
+    background-color: #ff0000;
+}
+.sobre {
+    background-color: #222;
+    color: white;
+    padding: 90px 25px;
+    text-align: center;
+}
+.sobre-conteudo {
+    max-width: 900px;
+    margin: auto;
+}
+.sobre h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.sobre p {
+    color: #ccc;
+    font-size: 18px;
+    line-height: 1.8;
+}
+.newsletter {
+    padding: 80px 25px;
+    background-color: #ead8c8;
+    text-align: center;
+}
+.newsletter h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+.newsletter p {
+    color: #666;
+    margin-bottom: 25px;
+}
+.formulario {
+    max-width: 550px;
+    margin: auto;
+    display: flex;
+    gap: 10px;
+}
+.formulario input {
+    flex: 1;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    font-size: 16px;
+}
+.formulario button {
+    padding: 15px 25px;
+    border: none;
+    border-radius: 30px;
+    background-color: #666;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+/* RODAPÉ */
+footer {
+    background-color: #111;
+    color: white;
+    padding: 50px 25px 25px;
+}
+.footer-conteudo {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 40px;
+}
+footer h3 {
+    margin-bottom: 15px;
+}
+footer p,
+footer a {
+    color: #aaa;
+    line-height: 2;
+    text-decoration: none;
+}
+footer a:hover {
+    color: white;
+}
+.copyright {
+    max-width: 1200px;
+    margin: 40px auto 0;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    text-align: center;
+    color: #777;
+}
+@media (max-width: 900px) {
+    .lista-produtos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .footer-conteudo {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .banner h1 {
+        font-size: 50px;
+    }
+}
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+    nav a {
+        margin: 0 7px;
+        font-size: 14px;
+    }
+    .banner {
+        min-height: 500px;
+    }
+    .banner h1 {
+        font-size: 42px;
+    }
+    .banner p {
+        font-size: 17px;
+    }
+    .beneficios,
+    .lista-produtos,
+    .footer-conteudo {
+        grid-template-columns: 1fr;
+    }
+    .formulario {
+        flex-direction: column;
+    }
+}
